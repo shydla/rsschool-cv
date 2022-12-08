@@ -51,4 +51,4 @@ http
 ## Languages
 
 * Russian - native speaker.
-* English - (in process…)
+* English - (in process… (puzzle-english.com))
