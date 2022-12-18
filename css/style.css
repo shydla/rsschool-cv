@@ -29,6 +29,7 @@ body {
 }
 .nav-list a {
   text-decoration: none;
+  color: #000;
 }
 html {
   scroll-behavior: smooth;
@@ -54,4 +55,15 @@ color: chocolate;
 }
 .cmd {
   color: blue;
+}
+.footer {
+  z-index: 2;
+  font-size: large;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding-left: 190px;
+  padding-right: 30px;
+  line-height: 50px;
 }
