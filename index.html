@@ -1,13 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="css/style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <img src="img/i.jpeg" alt="This is me 15 years ago" width="100" >
-</body>
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cv</title>
+    <link rel="icon" href="assets/img/favicon.ico" />
+  </head>
+
+  <body>
+    <header class="header">
+      <img src="assets/img/i.jpeg" alt="This is me 15 years ago" width="160" />
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a href="#summary" class="nav-link">Summary</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+            <li class="nav-item">
+              <a href="#education" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+              <a href="#languages" class="nav-link">Languages</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <h1>Roman Samsonov</h1>
+        <h2 id="contacts">Contacts</h2>
+        <ul>
+          <li>Phone: +995 595-12-65-30</li>
+          <li>GitHub: shydla</li>
+          <li>E-mail: shydla@gmail.com</li>
+        </ul>
+        <h2 id="summary">About me</h2>
+        <p>
+          I want to change my field of activity and become a front-end
+          developer.
+        </p>
+        <h2 id="skills">Skills</h2>
+        <ul>
+          <li>HTML&CSS</li>
+          <li>Python</li>
+          <li>SQL</li>
+        </ul>
+        <h2 id="code">Code Examples</h2>
+
+        <pre>
+            <span class="cmd">const</span> http = require(<span class="str">"http"</span>);
+            http
+              .createServer((request, response) <span class="cmd">=></span> {
+                <span class="cmd">if</span> (request.url === <span class="str">"/hello"</span>) {
+                  response.write(<span class="str">"How are you? "</span>);
+                } <span class="cmd">else</span> {
+                  response.write(<span class="str">"Hello word!"</span>);
+                }
+                response.end();
+              })
+              .listen(<span class="int">3000</span>);
+          </pre>
+
+        <h2 id="education">Education</h2>
+        <h3>Stepik</h3>
+        <ul>
+          <li>JS for beginners</li>
+          <li>Web Development for Beginners: HTML and CSS</li>
+          <li>Programming in Python</li>
+          <li>Interactive SQL Trainer</li>
+        </ul>
+        <h3>Udemy</h3>
+        <ul>
+          <li>Modern JavaScript (in process…)</li>
+        </ul>
+        <h3 id="languages">Languages</h3>
+        <ul>
+          <li>Russian - native speaker.</li>
+          <li>English - (in process… (puzzle-english.com))</li>
+        </ul>
+      </div>
+    </main>
+    <footer class="footer">
+      <a href="https://github.com/shydla">GitHub</a>
+      <p>2022</p>
+      <a href="https://rs.school/js-stage0/">
+        <img
+          src="assets/img/rs_school_js.svg"
+          alt="rs-school logo"
+          width="60"
+        >
+      </a>
+    </footer>
+  </body>
 </html>
