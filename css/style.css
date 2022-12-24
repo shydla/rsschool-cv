@@ -46,6 +46,7 @@ header {
 }
 main {
   padding-left: 160px;
+  margin: auto;
 }
 .str {
 color: chocolate;
